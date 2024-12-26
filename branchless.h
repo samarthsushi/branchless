@@ -7,5 +7,6 @@ int clamp(int x, int a, int b);
 int max(int a, int b);
 int min(int a, int b);
 int is_odd(int x);
+int is_power_of_two(int x);
 
 #endif

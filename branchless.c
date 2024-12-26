@@ -15,6 +15,9 @@ int absolute(int x) {
   return (x + mask) ^ mask;
 }
 
+
+// clamp values to a specified range
+// if int x crosses bounds [a,b], they get clamped to the nearest bound
 int clamp(int x, int a, int b) {
   return (x < a) * a + (x > b) * b + (x >= a && x <= b) * x;
 }
@@ -31,6 +34,6 @@ int is_odd(int x) {
   return x & 1;
 }
 
-int is_power_of_2(int x) {
+int is_power_of_two(int x) {
   return x > 0 && !(x & (x-1));
 }
